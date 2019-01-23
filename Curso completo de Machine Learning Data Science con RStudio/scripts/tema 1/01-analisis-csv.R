@@ -21,8 +21,8 @@ names(auto)
 # Para cargar .csv sin cabecera
 auto_no_header <- read.csv("data/tema1/auto-mpg-noheader.csv", header = FALSE)
 
-# Devuelve las primeras léneas de un data set
-# El primer parametro es el data set, el segundo la cantidad de observaciones (filas) a mostrar
+# Devuelve las primeras léneas de un data frame
+# El primer parametro es el data frame, el segundo la cantidad de observaciones (filas) a mostrar
 head(auto_no_header, 4)
 
 # Si a un csv sin cabecera no se le especifica header = FALSE, R creará nombres de variables combinando el valor de la primera fila anteponiendole una X
@@ -42,7 +42,7 @@ auto_custom_header <-
 head(auto_custom_header, 2)
 
 # https://jsonplaceholder.typicode.com/ -> fakes csv
-# Si se desea cargar un .csv desde internet en lugar de especificar un data set local, le asignamos una URL
+# Si se desea cargar un .csv desde internet en lugar de especificar un data frame local, le asignamos una URL
 who_from_internet <- read.csv("https://frogames.es/course-contents/r/intro/tema1/WHO.csv")
 
 ####### Realizar una breve evaluación teórica y práctica #######
