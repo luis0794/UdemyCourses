@@ -1,5 +1,5 @@
 #para asignar un directorio de trabajo
-#setwd("") 
+#setwd("D:/Luis/git/Udemy/Curso completo de Machine Learning Data Science con RStudio") 
 
 #para obtener el directorio
 getwd() 
