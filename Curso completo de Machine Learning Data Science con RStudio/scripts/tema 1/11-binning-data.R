@@ -32,4 +32,4 @@ names(students.dummy)
 dummy(students$State)
 
 # tambien podemos usar el parametro names, para atacar a un subconjunto, en el especificamos los nombres de las columnas
-dummy.data.frame(students, names = c())
+dummy.data.frame(students, names = c("State", "Gender"), sep = ".")
