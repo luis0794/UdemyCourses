@@ -25,7 +25,7 @@ data$Income[data$Income == 0] <- NA
 
 
 ### Medidas de centralización y dispersión 
-# mean() = para sacar el promedio (centralización)
+# mean() = para sacar la media o promedio (centralización)
 mean(data$Income) # El resultado dará NA, ya que existen valores en Income que son NA y R no permite operar
 # na.rm = T, omitirá los registros NA
 mean(data$Income, na.rm = T)
