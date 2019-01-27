@@ -37,3 +37,7 @@ anyNA(housing.data)
 library(Hmisc)
 
 impute_arg <- aregImpute(~ptratio + rad, data = housing.data, n.impute = 5)
+
+impute_arg
+
+impute_arg$imputed$rad
