@@ -82,3 +82,17 @@ with(subset(auto, cylinders == "3cil"),
 
 
 ##### Combinación de plots con par #####
+# par, abreviación de parametros, parametros de configuración de los graficos
+old.par <- par()
+old.par
+
+# Para cambiar una propiedad de los gráficos
+par(mfrow = c(1,2))
+
+with(auto, {
+  plot(mpg ~ weight, main = "Peso vs Consumo")
+  plot(mpg ~ acceleration, main = "Aceleración vs Consumo")
+})
+
+### Nota: para restaurar los parametros iniciales
+par(old.par)
